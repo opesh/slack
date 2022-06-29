@@ -34,12 +34,12 @@ body{
     padding: 1rem 2rem;
     margin: 0 2rem;
     font-size:1.5rem;
-    color: green;
+    color: #08BF46;
     background-color: white;
     border:none;
 }
 #btn_1:hover{
-    background-color: green;
+    background-color:#08BF46;
     color: white;
     font-size: 2rem;
 }
@@ -47,14 +47,14 @@ body{
     padding: 1rem 2rem;
     margin: 0 6rem 0 2rem;
     font-size:1.5rem;
-    background-color: green;
-    border:green;
+    background-color: #08BF46;
+    border:#08BF46;
     color:white;
     outline: none;
 }
 #btn_2:hover{
     background-color: white ;
-    color: green;
+    color: #08BF46;
     font-size: 2rem;
 }
 .icon{
@@ -70,30 +70,29 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 .content_info{
-    position: relative;
     padding : 2rem;
-    background-color: green;
+    background-color: #08BF46;
 }
-.content_info h1{
+.content_info div{
+    margin-top: 6rem;
+    width: 100%;
+}
+.content_info div h1{
     color: white;
+    padding: 3rem;
+    text-align: center;
     font-size:12rem;
-    position: absolute;
-    top:15%;
-    left: 10%;
-    
 }
-.content_info p{
+.content_info div p{
+    text-align: center;
     color: white;
+    padding: 2rem;
     font-size: 2rem;
-    position: absolute;
-    bottom:43%;
-    left: 14%;
-    
 }
 .content_info_2{
     position: relative;
     padding : 2rem;
-    background-color: lightgreen;
+    background-color: #C6E9D2;
 }
 .imginfo{
     width:50rem;
@@ -103,7 +102,7 @@ body{
 }
 .card{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display:grid;
     grid-template-rows: 1fr 1fr;
     padding:4rem;
@@ -112,20 +111,21 @@ body{
     border: .5px solid gray;
     box-shadow: 1px 1px 5px gray;
     border-radius : 1rem;
-    height: 74%;
+    height: 64%;
 }
 .card_a{
     /* border: 1px solid black; */
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
+    padding : 3rem;
 }
 .card_note{
     border: 1px 0 1px 1px solid gray;
     border-radius: 0  1rem  1rem 0;
     box-shadow: 1px 1px 5px gray;
     font-size: 1.5rem;
-    height: 64%;
+    height: 54%;
     margin: 2rem 0 0 0;
 }
 .card_note h3{
@@ -143,7 +143,7 @@ body{
     width: 40rem;
 }
 .footer{
-    background-color: lightgreen;
+    background-color: #C6E9D2;
     width: 100%;
     height: 30vh;
     font-size:1.5rem;
@@ -159,7 +159,7 @@ body{
 }
 .footer_home a:hover{
     color:white;
-    background-color: green;
+    background-color: #08BF46;
     padding: 1rem;
     border-radius: 1.5rem;
 }
@@ -182,7 +182,84 @@ body{
     width:4rem;
     padding: 0 1rem;
 }
-@media screen and (max-width: 1400px) {
+ @media screen and (max-width: 1400px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html{
+        font-size: 9.5px;
+        box-sizing: border-box;
+    }
+    .navbar-icon{
+        padding: 1.5rem 3rem;
+    }
+    .navbar-text{
+        padding: 2.5rem 3rem;
+    }
+    #btn_1{
+        padding: 1rem 2rem;
+        margin: 0 2rem;
+        font-size:1.3rem;
+        
+    }
+    #btn_1:hover{
+        font-size: 1.5rem;
+    }
+    #btn_2{
+        padding: 1rem 2rem;
+        margin: 0 6rem 0 2rem;
+        font-size:1.5rem;
+    }
+    .icon{
+        width:4rem;
+    }
+    .content{
+        width: 100%;
+        margin-top: 10vh;
+        height: 110vh;
+        padding-bottom: 20vh;
+        margin-top: 10vh;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content_info{
+        padding : 2rem;
+        background-color: #08BF46;
+    }
+    .content_info div{
+      margin-top: 6rem;
+    }
+    .content_info div h1{
+        color: white;
+        padding: 3rem;
+        text-align: center;
+        font-size:11rem;
+    }
+    .content_info div p{
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        font-size: 2rem;
+    }       
+    .content_info_2{
+        position: relative;
+        padding : 2rem;
+        background-color: #C6E9D2;
+    }
+    .imginfo{
+        width:40rem;
+        position: absolute;
+        top:15%;
+        right : 18%;
+    }
+    .img{
+        width: 40rem;
+        height : 32rem;
+    }
+}
+@media screen and (max-width: 1134px) {
     *{
         padding: 0;
         margin: 0;
@@ -213,45 +290,54 @@ body{
         font-size:1.5rem;
     }
     .icon{
-        width:4rem;
+        width:3.5rem;
     }
-    .content_info{
-        position: relative;
+    .content{
+        width: 100%;
+        margin-top: 10vh;
+        height: 110vh;
+        padding-bottom: 20vh;
+        margin-top: 10vh;
+        display:grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+       .content_info{
         padding : 2rem;
+        background-color: #08BF46;
     }
-    .content_info h1{
-        color: white;
-        font-size:10rem;
-        position: absolute;
-        top:20%;
-        left: 10%;
-        
+    .content_info div{
+        width: 100%;
+      margin-top: 6rem;
     }
-    .content_info p{
+    .content_info div h1{
         color: white;
+        padding: 3rem;
+        text-align: center;
+        font-size: 10rem;
+    }
+    .content_info div p{
+        text-align: center;
+        color: white;
+        padding: 2rem;
         font-size: 2rem;
-        position: absolute;
-        bottom:43%;
-        left: 10%;
-        
-    }
+    }   
     .content_info_2{
         position: relative;
         padding : 2rem;
-        background-color: lightgreen;
+        background-color: #C6E9D2;
     }
     .imginfo{
-        width:40rem;
+        width:35rem;
         position: absolute;
-        top:15%;
+        top:20%;
         right : 18%;
     }
-    .img{
+     .img{
         width: 40rem;
-        height : 32rem;
+        height: 36rem
     }
 }
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 978px) {
     *{
         padding: 0;
         margin: 0;
@@ -284,30 +370,39 @@ body{
     .icon{
         width:3.5rem;
     }
-    .content_info{
-        position: relative;
+    .content{
+        width: 100%;
+        margin-top: 10vh;
+        height: 110vh;
+        padding-bottom: 20vh;
+        margin-top: 10vh;
+        display:grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+       .content_info{
         padding : 2rem;
+        background-color: #08BF46;
     }
-    .content_info h1{
-        color: white;
-        font-size:8rem;
-        position: absolute;
-        top:25%;
-        left: 10%;
-        
+    .content_info div{
+        width: 100%;
+      margin-top: 6rem;
     }
-    .content_info p{
+    .content_info div h1{
         color: white;
+        padding: 3rem;
+        text-align: center;
+        font-size: 9rem;
+    }
+    .content_info div p{
+        text-align: center;
+        color: white;
+        padding: 1.8rem;
         font-size: 2rem;
-        position: absolute;
-        bottom:48%;
-        left: 10%;
-        
-    }
+    }   
     .content_info_2{
         position: relative;
         padding : 2rem;
-        background-color: lightgreen;
+        background-color: #C6E9D2;
     }
     .imginfo{
         width:35rem;
@@ -315,13 +410,13 @@ body{
         top:20%;
         right : 18%;
     }
-    .img{
+     .img{
         width: 40rem;
-        height: 36rem
+        height: 39rem
     }
 }
 /* 
-@media screen and (min-width: 481px) and (max-width: 768px) { 
+@media screen  (max-width: 826px) { 
     *{
         padding: 0;
         margin: 0;
@@ -340,7 +435,7 @@ body{
         grid-template-rows: 1fr 1fr; */
         /* width: 100%; */
     
-    }
+    /* }
     .content_info{
         width: 100%;
         position: relative;
@@ -376,8 +471,8 @@ body{
         top:15%;
         right : 18%;
     }
-} */
+} 
 
 @media only screen and (max-width: 480px) {
-    /* STYLES HERE */
-}
+   
+} */
