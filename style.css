@@ -182,15 +182,202 @@ body{
     width:4rem;
     padding: 0 1rem;
 }
-
-@media screen and (min-width: 769px) {
-    /* STYLES HERE */
+@media screen and (max-width: 1400px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html{
+        font-size: 9px;
+        box-sizing: border-box;
+    }
+    .navbar-icon{
+        padding: 1.5rem 3rem;
+    }
+    .navbar-text{
+        padding: 2.5rem 3rem;
+    }
+    #btn_1{
+        padding: 1rem 2rem;
+        margin: 0 2rem;
+        font-size:1.3rem;
+        
+    }
+    #btn_1:hover{
+        font-size: 1.5rem;
+    }
+    #btn_2{
+        padding: 1rem 2rem;
+        margin: 0 6rem 0 2rem;
+        font-size:1.5rem;
+    }
+    .icon{
+        width:4rem;
+    }
+    .content_info{
+        position: relative;
+        padding : 2rem;
+    }
+    .content_info h1{
+        color: white;
+        font-size:10rem;
+        position: absolute;
+        top:20%;
+        left: 10%;
+        
+    }
+    .content_info p{
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        bottom:43%;
+        left: 10%;
+        
+    }
+    .content_info_2{
+        position: relative;
+        padding : 2rem;
+        background-color: lightgreen;
+    }
+    .imginfo{
+        width:40rem;
+        position: absolute;
+        top:15%;
+        right : 18%;
+    }
+    .img{
+        width: 40rem;
+        height : 32rem;
+    }
 }
-
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
-    /* STYLES HERE */
+@media screen and (max-width: 1044px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html{
+        font-size: 8px;
+        box-sizing: border-box;
+    }
+    .navbar-icon{
+        padding: 1.5rem 3rem;
+    }
+    .navbar-text{
+        padding: 2.5rem 3rem;
+    }
+    #btn_1{
+        padding: 1rem 2rem;
+        margin: 0 2rem;
+        font-size:1.3rem;
+        
+    }
+    #btn_1:hover{
+        font-size: 1.5rem;
+    }
+    #btn_2{
+        padding: 1rem 2rem;
+        margin: 0 6rem 0 2rem;
+        font-size:1.5rem;
+    }
+    .icon{
+        width:3.5rem;
+    }
+    .content_info{
+        position: relative;
+        padding : 2rem;
+    }
+    .content_info h1{
+        color: white;
+        font-size:8rem;
+        position: absolute;
+        top:25%;
+        left: 10%;
+        
+    }
+    .content_info p{
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        bottom:48%;
+        left: 10%;
+        
+    }
+    .content_info_2{
+        position: relative;
+        padding : 2rem;
+        background-color: lightgreen;
+    }
+    .imginfo{
+        width:35rem;
+        position: absolute;
+        top:20%;
+        right : 18%;
+    }
+    .img{
+        width: 40rem;
+        height: 36rem
+    }
 }
+/* 
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    html{
+        font-size: 8px;
+        box-sizing: border-box;
+    }
+    .content{
+        /* width: 100%;
+        margin-top: 10vh;
+        height: 110vh;
+        padding-bottom: 20vh;
+        display:grid;
+        grid-template-rows: 1fr 1fr; */
+        /* width: 100%; */
+    
+    }
+    .content_info{
+        width: 100%;
+        position: relative;
+        padding : 2rem;
+        background-color: green;
+    }
+    .content_info h1{
+        color: white;
+        font-size:12rem;
+        position: absolute;
+        top:18%;
+        left: 10%;
+        
+    }
+    .content_info p{
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        bottom:44%;
+        left: 14%;
+        
+    }
+    .content_info_2{
+        width: 100%;
+        position: relative;
+        padding : 2rem;
+        background-color: lightgreen;
+    }
+    .imginfo{
+        display:none;
+        width:50rem;
+        position: absolute;
+        top:15%;
+        right : 18%;
+    }
+} */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
     /* STYLES HERE */
 }
