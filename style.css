@@ -77,7 +77,7 @@ body {
   cursor: pointer;
 }
 
-.app-button:hover {
+.app-button:hover, .app-button:active {
   background: white;
   color: var(--green);
   border: solid .2rem var(--green);
@@ -90,7 +90,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 8.2rem 5.0rem 0 0;
+  padding: 8.2rem 0 0 0;
+  background: var(--light-green);
 }
 
 .hero_content {
@@ -119,11 +120,12 @@ body {
 }
 
 .hero_img_container {
-  background-image: url(./image/phone-vote.png);
+  background: url(./image/phone-vote.png) var(--light-green);
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-right: 5rem;
 }
 
 .card_container {
@@ -233,6 +235,19 @@ body {
 }
 
 @media only screen and (max-width: 1050px) {
+  .navbar {
+    padding: 0 3rem;
+  }
+  .middle-nav {
+    display: none;
+  }
+
+  .app-button {
+    font-size: 1.4rem;
+    margin-left: 0;
+    height: 3.7rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding-right: 0;
@@ -241,10 +256,38 @@ body {
 
   .hero_content {
     height: 100vh;
+    padding: 6.7rem 2.1rem;
   }
 
   .hero_img_container {
     height: 100vh;
+    margin: 4rem 4.7rem;
+  }
+
+  .candidates {
+    font-size: 2.4rem;
+    background-color: var(--grey);
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+ 
+  .card_container {
+    padding-top: 3.2rem;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card_img {
+    min-height: 250px;
+  }
+
+  .card_img2 {
+    min-height: 250px;
   }
 }
 
