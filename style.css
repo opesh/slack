@@ -128,6 +128,10 @@ body {
   margin-right: 5rem;
 }
 
+.candidates {
+  display: none;
+}
+
 .card_container {
   width: 100%;
   display: grid;
@@ -188,6 +192,7 @@ body {
 
 .card_note ul {
   margin: 0;
+  list-style-image: var(--green);
 }
 
 .card_note li:nth-child(1) {
@@ -275,11 +280,27 @@ body {
   }
  
   .card_container {
+    padding: 2.6rem;
     padding-top: 3.2rem;
   }
 
   .card {
     grid-template-columns: 1fr;
+  }
+
+  .card_note {
+    margin: 0 1rem;
+    padding: 3.2rem 3rem 4.6rem;
+    font-size: 1.4rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .card_note h3 {
+    font-size: 2.4rem;
+  }
+
+  .card_note ul {
+    padding-inline-start: 2rem;
   }
 
   .card_img {
@@ -288,6 +309,38 @@ body {
 
   .card_img2 {
     min-height: 250px;
+  }
+
+  .footer_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_nav a, .footer_copy {
+    font-size: 1.6rem;
+  }
+
+  .footer_info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_copy {
+    margin: 0;
+  }
+
+  .footer_socials {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social {
+    width: 48px;
+
+    display: flex;
+    align-content: space-between;
+    gap: 10px;
   }
 }
 
